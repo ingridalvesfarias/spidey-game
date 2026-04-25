@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SPIDER-MAN VS GREEN GOBLIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="main-title">SPIDER-MAN VS GREEN GOBLIN</h1>
+
+    <div id="placar">
+        SPIDER-MAN: <span id="score-aranha">0</span> | GREEN GOBLIN: <span id="score-duende">0</span>
+    </div>
+
+    <div class="game-container">
+        <div id="vitoria-msg-container" class="hidden">
+            <h2 id="vitoria-msg-text"></h2>
+        </div>
+
+        <div id="gui">
+            <div class="player-wrapper">
+                <img src="assets/icon-aranha.jpeg" class="player-icon aranha-border" alt="Spider-Man">
+                <div class="health-container">
+                    <div id="aranha-health" class="health-bar"></div>
+                </div>
+            </div>
+            <div class="vs-badge">VS</div>
+            <div class="player-wrapper">
+                <div class="health-container">
+                    <div id="duende-health" class="health-bar"></div>
+                </div>
+                <img src="assets/icon-duende.jpeg" class="player-icon duende-border" alt="Green Goblin">
+            </div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="pc-hints">
+            <span>[A][D] Mover</span>
+            <span>[W] Pular</span>
+            <span>[F] Teia</span>
+        </div>
+    </div>
+
+    <div class="controles-touch">
+        <div class="direcionais">
+            <button id="btn-esquerda">◀</button>
+            <button id="btn-direita">▶</button>
+        </div>
+        <div class="acoes">
+            <button id="btn-pular">Pular</button>
+            <button id="btn-teia">Teia</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
